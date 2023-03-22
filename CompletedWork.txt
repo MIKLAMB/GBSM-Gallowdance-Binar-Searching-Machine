@@ -1,0 +1,17 @@
+1.Defined the data structure for the input data that will be searching, included the size of the data and any necessary padding or alignment requirements.
+
+2.Loaded the input data into memory and prepared it for searching.
+
+3.Initialized the SHA-512 hashing algorithm by loading by initial hash values and setted up the message schedule.
+
+4.Process the input data in chunks using the SHA-512 compression function. Each chunk should be padded and aligned according to the SHA-512 specification.
+
+5.After processing all of the input data, finalized the SHA-512 algorithm by added all necessary paddings and appendings the length of the input data.
+
+6.Stored the resulting hash value in memory for later comparison during the search.
+
+7.Implemented the search algorithm, which should read the input data and compared it against the target hash value. usied a variety of algorithms, such as linear search.
+
+8.Improved performance, considered using parallelization techniques such as multi-threading or vectorization to speed up the search algorithm.
+
+9.Implemented the decryption algorithm, which should take the encrypted input data and use the SHA-512 algorithm in reverse to recover the original plaintext data.
