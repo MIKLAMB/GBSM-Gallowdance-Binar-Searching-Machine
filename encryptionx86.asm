@@ -1,18 +1,42 @@
-; SHA-512 Encryption and Decryption
+; x86 NASM syntax:
 
-section .data
-    ; Declare data section here
-
-section .text
-    global encrypt
-    global decrypt
-
-    ; Encrypt function
-    encrypt:
-        ; Add encryption code here
-        ret
-
-    ; Decrypt function
-    decrypt:
-        ; Add decryption code here
-        ret
+; SHA-512 Constants
+%define SHA512_K0 0x428a2f98d728ae22
+%define SHA512_K1 0x7137449123ef65cd
+%define SHA512_K2 0xb5c0fbcfec4d3b2f
+%define SHA512_K3 0xe9b5dba58189dbbc
+%define SHA512_K4 0x3956c25bf348b538
+%define SHA512_K5 0x59f111f1b605d019
+%define SHA512_K6 0x923f82a4af194f9b
+%define SHA512_K7 0xab1c5ed5da6d8118
+%define SHA512_K8 0xd807aa98a3030242
+%define SHA512_K9 0x12835b0145706fbe
+%define SHA512_K10 0x243185be4ee4b28c
+%define SHA512_K11 0x550c7dc3d5ffb4e2
+%define SHA512_K12 0x72be5d74f27b896f
+%define SHA512_K13 0x80deb1fe3b1696b1
+%define SHA512_K14 0x9bdc06a725c71235
+%define SHA512_K15 0xc19bf174cf692694
+%define SHA512_K16 0xe49b69c19ef14ad2
+%define SHA512_K17 0xefbe4786384f25e3
+%define SHA512_K18 0x0fc19dc68b8cd5b5
+%define SHA512_K19 0x240ca1cc77ac9c65
+%define SHA512_K20 0x2de92c6f592b0275
+%define SHA512_K21 0x4a7484aa6ea6e483
+%define SHA512_K22 0x5cb0a9dcbd41fbd4
+%define SHA512_K23 0x76f988da831153b5
+%define SHA512_K24 0x983e5152ee66dfab
+%define SHA512_K25 0xa831c66d2db43210
+%define SHA512_K26 0xb00327c898fb213f
+%define SHA512_K27 0xbf597fc7beef0ee4
+%define SHA512_K28 0xc6e00bf33da88fc2
+%define SHA512_K29 0xd5a79147930aa725
+%define SHA512_K30 0x06ca6351e003826f
+%define SHA512_K31 0x142929670a0e6e70
+%define SHA512_K32 0x27b70a8546d22ffc
+%define SHA512_K33 0x2e1b21385c26c926
+%define SHA512_K34 0x4d2c6dfc5ac42aed
+%define SHA512_K35 0x53380d139d95b3df
+%define SHA512_K36 0x650a73548baf63de
+%define SHA512_K37 0x766a0abb3c77b2a8
+%define SHA
